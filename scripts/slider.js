@@ -4,7 +4,10 @@ function serviceSlider() {
         totalSlides: 4, // Total number of services
         init() {
             // Optional: Auto-slide functionality
-            
+            if (this.slide) {
+                this.autoSlide()
+            }
+
         },
         autoSlide() {
             setInterval(() => {

@@ -59,10 +59,13 @@ header {
     height: 2px;
     display: block;
     background: #135981;
-    transition: 300ms;
   }
   
   nav ul li a:hover::after {
+    width: 100%;
+  }
+
+  nav ul li a.active::after {
     width: 100%;
   }
   
