@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Home - Simon Sites</title>
+        <link rel="stylesheet" href="styles/nav.css">
+        <script src="scripts/nav.js"></script>
+        <script src="//unpkg.com/alpinejs" defer></script>
+        <link rel="shortcut icon" href="assets/SmallLogo.svg" type="image/x-icon">
+</head>
+<body class="text-gray-900">
+    <!-- NAV SECTION -->
+    <header>
+        <div class="nav-container">
+            <nav>
+                <img src="Assets/fulllogo.svg" alt="double s logo">
+                <ul class="menu" id="menu">
+                    <li><a onclick="myFunction(this)" href="#">Home</a></li>
+                    <li><a class="active" onclick="myFunction(this)" href="about.html">About</a></li>
+                    <li><a onclick="myFunction(this)" href="services.html">Services</a></li>
+                    <li><a onclick="myFunction(this)" href="contact.html">Contact</a></li>
+                    <li><a onclick="frfunc()">Français</a></li>
+                </ul>
+                <a onclick="myFunction(this)" class="icon" id="icon">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </a>
+                <div id="cover" class="absolute w-full h-20 top-0 left-0 z-50 bg-white hidden cover">
+                </div>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>
