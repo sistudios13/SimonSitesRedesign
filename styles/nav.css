@@ -86,7 +86,7 @@ header {
       padding-bottom: 20px;
       box-shadow: 0 3px 4px 0 rgba(0,0,0,.2);
       transform: translateY(-350px);
-      opacity: 0;
+
       z-index: 7;
       animation-name: animation1;
       animation-duration: 0.5s;
@@ -125,11 +125,11 @@ header {
           opacity: 1;
       }
       60% {
-          opacity: 0;
+
       }
       100% {
           transform: translateY(-350);
-          opacity: 0;
+
       }
   }
   
