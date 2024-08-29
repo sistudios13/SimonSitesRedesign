@@ -14,7 +14,13 @@
     <script src="scripts/scrollanims.js" defer></script>
 
     <script type="text/javascript">var submitted=false;</script>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='index.html';}"></iframe>
+    <script>
+        function successfunc() {
+            document.getElementById('contact-wrapper').className = 'hidden';
+            document.getElementById('succes-mess').className = 'block';
+        }
+    </script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {successfunc();}"></iframe>
 
   </head>
 <body class="text-gray-900">
@@ -129,9 +135,13 @@
                     </div>
                     <div class="flex flex-col">
                         <label class="mb-1 ml-2 fadeup " for="message">Message</label>
-                        <textarea required class="focus-visible:border-[#135981] outline-none fadeup border-gray-900 border-2 focus-visible:rounded-lg rounded-lg p-1.5" name="entry.813660717" id="message" type="text"></textarea>
+                        <textarea required minlength="5" maxlength="5000" class="focus-visible:border-[#135981] outline-none fadeup border-gray-900 border-2 focus-visible:rounded-lg rounded-lg p-1.5" name="entry.813660717" id="message" type="text"></textarea>
                     </div>
                     <button type="submit" class="cursor-pointer fadeup mt-5 mx-auto bg-[#135981] hover:bg-[#38B6FF] w-fit px-3.5 py-2.5 rounded-md text-md font-semibold text-white block">Email Us</button>
+                </div>
+                <div id="succes-mess" class="hidden">
+                    <h2 class=" text-2xl text-center font-bold py-4 lg:text-3xl 2xl:text-4xl">Success!</h2>
+                    <p class="text-gray-600 mb-8 text-center text-base lg:text-lg 2xl:text-xl">The contact form was successfully submitted! We will get back to you as soon as possible.</p>
                 </div>
 
             </form>
