@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="styles/scrollanims.css">
     <script src="scripts/scrollanims.js" defer></script>
 
+    <script type="text/javascript">var submitted=false;</script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='index.html';}"></iframe>
+
   </head>
 <body class="text-gray-900">
 
@@ -109,24 +112,27 @@
     <section class="my-24">
       <div class="px-6 2xl:px-24">
         <div>
-            <form action="" class="space-y-2 bg-gray-50 p-4 rounded-lg 2xl:w-1/2 2xl:mx-auto">
-                <h2 class="fadeup text-2xl text-center font-bold py-4 lg:text-3xl 2xl:text-4xl">Reach Out</h2>
-                
-                <div class="md:grid md:grid-cols-2 md:gap-4">
-                    <div class="flex flex-col">
-                        <label class=" fadeup mb-1 ml-2" for="name">Name</label>
-                        <input required class=" fadeup border-gray-900 border-2 focus-visible:rounded-lg rounded-lg p-1.5" name="name" id="name" type="text">
+            <form method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSeH5aueAvqcpTR6C6X9PADt12wwh4S3BqX52B9R-H08KIZxdA/formResponse" target="hidden_iframe"
+            onsubmit="submitted=true;" id="contact-form" class=" space-y-2 shadow-md bg-gray-50 p-4 rounded-lg 2xl:w-1/2 2xl:mx-auto">
+                <div id="contact-wrapper">
+                    <h2 class="fadeup text-2xl text-center font-bold py-4 lg:text-3xl 2xl:text-4xl">Reach Out</h2>
+                    
+                    <div class="md:grid md:grid-cols-2 md:gap-4">
+                        <div class="flex flex-col">
+                            <label class=" fadeup mb-1 ml-2" for="name">Name</label>
+                            <input required class="focus-visible:border-[#135981] outline-none fadeup border-gray-900 border-2 focus-visible:rounded-lg rounded-lg p-1.5" name="entry.873983918" id="name" type="text">
+                        </div>
+                        <div class="flex flex-col">
+                            <label class="mb-1 ml-2 fadeup " for="email">Email</label>
+                            <input required class="focus-visible:border-[#135981] outline-none fadeup border-gray-900 border-2 focus-visible:rounded-lg rounded-lg p-1.5" name="entry.1668327303" id="email" type="email">
+                        </div>
                     </div>
                     <div class="flex flex-col">
-                        <label class="mb-1 ml-2 fadeup " for="email">Email</label>
-                        <input required class=" fadeup border-gray-900 border-2 focus-visible:rounded-lg rounded-lg p-1.5" name="email" id="email" type="email">
+                        <label class="mb-1 ml-2 fadeup " for="message">Message</label>
+                        <textarea required class="focus-visible:border-[#135981] outline-none fadeup border-gray-900 border-2 focus-visible:rounded-lg rounded-lg p-1.5" name="entry.813660717" id="message" type="text"></textarea>
                     </div>
+                    <button type="submit" class="cursor-pointer fadeup mt-5 mx-auto bg-[#135981] hover:bg-[#38B6FF] w-fit px-3.5 py-2.5 rounded-md text-md font-semibold text-white block">Email Us</button>
                 </div>
-                <div class="flex flex-col">
-                    <label class="mb-1 ml-2 fadeup " for="message">Message</label>
-                    <textarea required class=" fadeup border-gray-900 border-2 focus-visible:rounded-lg rounded-lg p-1.5" name="message" id="message" type="text"></textarea>
-                </div>
-                <a type="submit" class="cursor-pointer fadeup mt-5 mx-auto bg-[#135981] hover:bg-[#38B6FF] w-fit px-3.5 py-2.5 rounded-md text-md font-semibold text-white block">Email Us</a>
 
             </form>
         </div>
