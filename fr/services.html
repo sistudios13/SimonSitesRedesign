@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Home - Simon Sites</title>
+    <link rel="stylesheet" href="styles/nav.css">
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/alpine.js" defer></script>
+    <link rel="shortcut icon" href="assets/SmallLogo.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/scrollanims.css">
+    <script src="scripts/scrollanims.js" defer></script>
+
+  </head>
+<body class="text-gray-900">
+
+    <!-- NAV SECTION -->
+    <header>
+        <div class="nav-container">
+            <nav id="navbar">
+                <img onclick="homeFunc()" id="logo" src="Assets/fulllogo.svg" alt="double s logo">
+                <ul class="menu" id="menu">
+                    <li><a  onclick="myFunction(this)" href="index.html">Home</a></li>
+                    <li><a onclick="myFunction(this)" href="about.html">About</a></li>
+                    <li><a class="active" onclick="myFunction(this)" href="services.html">Services</a></li>
+                    <li><a onclick="myFunction(this)" href="contact.html">Contact</a></li>
+                    <li><a href="fr/index.html">Français</a></li>
+                </ul>
+                <a onclick="myFunction(this)" class="icon" id="icon">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </a>
+                <div id="cover" class="absolute w-full h-20 top-0 left-0 z-50 bg-white hidden cover">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section>
+        <div class="bg-white">
+            <div class="relative isolate px-6 pt-14 lg:px-8">
+              <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+                <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#38B6FF] to-[#135981] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+              </div>
+              <div class="mx-auto max-w-2xl py-24 sm:py-32 lg:py-48 2xl:py-56">
+                <div class="text-center">
+                  <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl fadeup">Our Services</h1>
+                  <p class="mt-6 text-lg leading-8 text-gray-600 fadeup delay1">At SimonSites, we specialize in crafting custom websites tailored to your specific business needs. We believe that every brand is unique, so we work closely with you to create a website that reflects your identity and values. Our affordable services ensure that you get a high-quality, professional website without breaking the bank.</p>
+                  <div class="mt-6 flex items-center justify-center gap-x-6">
+                    <a href="contact.html" class="rounded-md bg-[#135981] px-3.5 py-2.5 text-base font-semibold text-white shadow-md hover:bg-[#38B6FF] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 fadeup delay2">Get in Touch</a>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+                <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr to-[#38B6FF] from-[#FFFFFF] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+    <!-- WHAT WE OFFER -->
+    <section class="pb-12 pt-4">
+        <div class="px-6 grid grid-cols-1 2xl:px-24 items-center">
+            <div class="bg-gray-50 fadeup rounded-lg shadow-md p-4 md:w-2/3 mx-auto 2xl:w-fit 2xl:px-12">
+                <h2 class=" text-2xl font-bold py-4 lg:text-3xl 2xl:text-4xl 2xl:text-center">What We Offer</h2>
+                <ul class="list-disc 2xl:list-none marker:text-gray-900 ml-6 space-y-2 2xl:mx-auto 2xl:w-fit text-gray-600">
+                    <li class="2xl:text-center">Personalized designs that match your brand</li>
+                    <li class="2xl:text-center">Easy-to-navigate layouts for a seamless user experience</li>
+                    <li class="2xl:text-center">Flexibility to update and grow with your business</li>
+                    <li class="2xl:text-center">Cost-effective solutions tailored to your budget</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SERVICES SECTION -->
+    <section>
+      <div class="px-6 2xl:px-24">
+
+        <div class="py-12 grid grid-cols-1 md:grid-cols-2 md:gap-12">
+            <div>
+                <h2 class="fadeup text-2xl font-bold py-4 lg:text-3xl 2xl:text-4xl">
+                    Responsive Design
+                </h2>
+                <div class="fadeup w-1/3 h-0.5 ml-1 bg-[#135981] xl:w-1/3"></div>
+                <p class="fadeup py-4 text-gray-600 text-base lg:text-lg 2xl:text-xl">
+                    In an age where users access websites from a variety of devices, ensuring your site looks and functions beautifully on all screen sizes is essential. We meticulously test your website for responsiveness across different devices, from smartphones to tablets and desktops, guaranteeing a consistent and engaging user experience.
+                </p>
+              </div>
+              <div class="fadeup delay1 bg-gray-50 rounded-lg shadow-md p-4">
+                <h2 class=" text-xl font-bold py-4 lg:text-2xl 2xl:text-3xl">Why it Matters</h2>
+                    <ul class="text-gray-600 marker:text-gray-900 list-disc ml-6 space-y-2 text-base lg:text-lg 2xl:text-xl">
+                        <li>Consistent look and feel across all devices</li>
+                        <li>Increased accessibility and user satisfaction</li>
+                        <li>Better engagement and lower bounce rates</li>
+                        <li>Enhanced mobile search rankings</li>
+                    </ul>
+               </div>
+        </div>
+
+        <div class="py-12 grid grid-cols-1 2xl:grid-cols-3 md:gap-12 md:px-24 2xl:px-0">
+            <div>
+                <h2 class="fadeup text-2xl md:text-center 2xl:text-left font-bold py-4 lg:text-3xl 2xl:text-4xl">
+                    Basic SEO Optimization
+                </h2>
+                <div class="fadeup md:mx-auto 2xl:mx-0 w-1/3 h-0.5 ml-1 bg-[#135981] xl:w-1/3"></div>
+                <p class="fadeup py-4 text-gray-600 2xl:text-left text-base md:text-center lg:text-lg 2xl:text-xl">
+                    Maximize your online presence with our basic SEO services. We provide essential optimization techniques that help your website rank better in search engines, driving more organic traffic to your site. Our approach is straightforward and effective, designed to give your business the visibility it needs without unnecessary complexity.
+                </p>
+              </div>
+              <div class="fadeup delay1 bg-gray-50 rounded-lg shadow-md p-4">
+                <h2 class=" text-xl font-bold py-4 lg:text-2xl 2xl:text-3xl">What's Included</h2>
+                    <ul class="text-gray-600 marker:text-gray-900 list-disc ml-6 space-y-2 text-base lg:text-lg 2xl:text-xl">
+                        <li>Essential keyword research and integration</li>
+                        <li>On-page SEO optimization (titles, meta descriptions, etc.)</li>
+                        <li>Basic performance tracking and adjustments</li>
+                        <li>Affordable packages that fit your needs</li>
+                    </ul>
+               </div>
+               <div class="mt-8 2xl:mt-0">
+                    <img class="fadeup delay2 size-72 md:size-80 2xl:size-96 mx-auto drop-shadow-md" src="assets/laptop-person.svg" alt="">
+               </div>
+        </div>
+
+        <div class="py-12 grid grid-cols-1 md:grid-cols-2 md:gap-12">
+            <div>
+                <h2 class="fadeup text-2xl font-bold py-4 lg:text-3xl 2xl:text-4xl">
+                    Website Maintenance
+                </h2>
+                <div class="fadeup w-1/3 h-0.5 ml-1 bg-[#135981] xl:w-1/3"></div>
+                <p class="fadeup py-4 text-gray-600 text-base lg:text-lg 2xl:text-xl">
+                    Your website needs regular care to stay updated, secure, and functioning smoothly. Our website maintenance services are designed to keep your site in peak condition with minimal hassle. Whether it’s performing routine updates, fixing bugs, or making minor content adjustments, we handle it all so you can focus on your business.
+                </p>
+              </div>
+              <div class="fadeup delay1 bg-gray-50 rounded-lg shadow-md p-4">
+                <h2 class="text-xl font-bold py-4 lg:text-2xl 2xl:text-3xl">Maintenance services include:</h2>
+                    <ul class="text-gray-600 marker:text-gray-900 list-disc ml-6 space-y-2 text-base lg:text-lg 2xl:text-xl">
+                        <li>Regular software updates and backups</li>
+                        <li>Security checks and vulnerability patching</li>
+                        <li>Performance monitoring and optimization</li>
+                        <li>Affordable monthly plans for peace of mind</li>
+                    </ul>
+               </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- PROCESS SECTION -->
+    <section>
+        <div class="px-6 grid md:grid-cols-2 md:gap-12 2xl:px-24 2xl:grid-cols-1">
+          <div class="2xl:flex 2xl:flex-col 2xl:justify-center 2xl:items-center 2xl:w-1/2 2xl:mx-auto">
+            <h2 class="fadeup text-2xl font-bold py-4 lg:text-3xl 2xl:text-4xl">
+                Our Process
+            </h2>
+            <div class="fadeup w-1/3 h-0.5 ml-1 bg-[#135981] xl:w-1/6"></div>
+            <p class="fadeup py-4 text-gray-600 text-base lg:text-lg 2xl:text-xl 2xl:text-center">
+             At SimonSites, we take pride in our hands-on, collaborative approach to web development. Here’s how we bring your website to life:
+            </p>
+          </div>
+          
+          <!--Small Screens-->
+  
+          <div x-data="serviceSlider(4)" class="relative overflow-hidden w-full 2xl:hidden">
+              <div class="flex transition-transform duration-500 ease-in-out"
+                  :style="{ transform: `translateX(-${currentSlide * 100}%)` }">
+                  <!-- Service 1 -->
+                  <div class="w-full flex-shrink-0 p-4 shadow-md bg-gray-50 rounded-lg xl:py-12">
+                      <img class="size-32 mx-auto py-2" src="assets/collaboration.svg" alt="image">
+                      <h3 class="text-xl font-semibold text-center mb-2 lg:text-2xl">Consultation & Planning</h3>
+                      <p class="text-center text-gray-600 lg:text-lg">We start by understanding your vision, goals, and target audience. Together, we choose the right hosting plan and domain name that best suits your business needs.</p>
+                  </div>
+                  <!-- Service 2 --> 
+                  <div class="w-full flex-shrink-0 p-4 shadow-md bg-gray-50 rounded-lg xl:py-12">
+                      <img class="size-32 mx-auto py-2" src="assets/design.svg" alt="image">
+                      <h3 class="text-xl font-semibold text-center mb-2 lg:text-2xl">Custom Design & Development</h3>
+                      <p class="text-center text-gray-600 lg:text-lg">Every website we create is hand-built from the ground up. We focus on crafting a unique design that aligns with your brand, ensuring that the user experience is both intuitive and engaging.</p>
+                  </div>
+                  <!-- Service 3 -->
+                    <div class="w-full flex-shrink-0 p-4 shadow-md bg-gray-50 rounded-lg xl:py-12">
+                    <img class="size-32 mx-auto py-2" src="assets/testing.svg" alt="image">  
+                      <h3 class="text-xl font-semibold text-center mb-2 lg:text-2xl">Responsive & Security Testing</h3>
+                      <p class="text-center text-gray-600 lg:text-lg">Before launch, we rigorously test your website on various devices and browsers to ensure it’s fully responsive. We also implement essential security measures to protect your site and data.</p>
+                  </div>
+                  <!-- Service 4 -->
+                  <div class="w-full flex-shrink-0 p-4 shadow-md bg-gray-50 rounded-lg xl:py-12">
+                      <img class="size-32 mx-auto py-2" src="assets/launch.svg" alt="image">
+                      <h3 class="text-xl font-semibold text-center mb-2 lg:text-2xl">Launch & Support</h3>
+                      <p class="text-center text-gray-600 lg:text-lg">Once everything is perfect, we launch your website and provide ongoing support. We’re here to help with any future updates, maintenance, or additional features you might need.</p>
+                  </div>
+              </div>
+              <!-- Navigation Dots -->
+              <div class="fadeup flex justify-center gap-x-2 py-2 mt-2">
+                  <template x-for="(dot, index) in totalSlides" :key="index">
+                      <button
+                          class="w-4 h-4 rounded-full focus:outline-none"
+                          :class="{ 'bg-[#135981]': currentSlide === index, 'bg-gray-300': currentSlide !== index }"
+                          @click="currentSlide = index; slide = false"
+                      ></button>
+                  </template>
+              </div>
+          </div>
+  
+          <!--Large Screens-->
+  
+          <div class="hidden 2xl:grid grid-cols-4 gap-6">
+                <!-- Service 1 -->
+                <div class="fadeup w-full flex-shrink-0 p-4 shadow-md bg-gray-50 rounded-lg xl:py-12">
+                    <img class="size-32 mx-auto py-2" src="assets/collaboration.svg" alt="image">
+                    <h3 class="text-xl font-semibold text-center mb-2 lg:text-2xl">Consultation & Planning</h3>
+                    <p class="text-center text-gray-600 lg:text-lg">We start by understanding your vision, goals, and target audience. Together, we choose the right hosting plan and domain name that best suits your business needs.</p>
+                </div>
+                <!-- Service 2 --> 
+                <div class="fadeup delay1 w-full flex-shrink-0 p-4 shadow-md bg-gray-50 rounded-lg xl:py-12">
+                    <img class="size-32 mx-auto py-2" src="assets/design.svg" alt="image">
+                    <h3 class="text-xl font-semibold text-center mb-2 lg:text-2xl">Custom Design & Development</h3>
+                    <p class="text-center text-gray-600 lg:text-lg">Every website we create is hand-built from the ground up. We focus on crafting a unique design that aligns with your brand, ensuring that the user experience is both intuitive and engaging.</p>
+                </div>
+                <!-- Service 3 -->
+                  <div class="fadeup delay2 w-full flex-shrink-0 p-4 shadow-md bg-gray-50 rounded-lg xl:py-12">
+                  <img class="size-32 mx-auto py-2" src="assets/testing.svg" alt="image">  
+                    <h3 class="text-xl font-semibold text-center mb-2 lg:text-2xl">Responsive & Security Testing</h3>
+                    <p class="text-center text-gray-600 lg:text-lg">Before launch, we rigorously test your website on various devices and browsers to ensure it’s fully responsive. We also implement essential security measures to protect your site and data.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="fadeup delay3 w-full flex-shrink-0 p-4 shadow-md bg-gray-50 rounded-lg xl:py-12">
+                    <img class="size-32 mx-auto py-2" src="assets/launch.svg" alt="image">
+                    <h3 class="text-xl font-semibold text-center mb-2 lg:text-2xl">Launch & Support</h3>
+                    <p class="text-center text-gray-600 lg:text-lg">Once everything is perfect, we launch your website and provide ongoing support. We’re here to help with any future updates, maintenance, or additional features you might need.</p>
+                </div>   
+          </div>
+  
+        </div>
+      </section>
+      <!--CTA-->
+      <section>
+        <div class="px-6 py-24 pt-12 2xl:px-24">
+            <div class="flex flex-col justify-center items-center py-6">
+                <h2 class="fadeup text-2xl text-center font-bold py-4 lg:text-3xl 2xl:text-4xl">Get Started Today!</h2>
+                <p class="fadeup py-4 text-gray-600 md:w-4/6 2xl:w-4/12 text-center text-base lg:text-lg 2xl:text-xl">Ready to take your online presence to the next level? At SimonSites, we’re dedicated to delivering high-quality, custom websites at an affordable price. Whether you're starting a new project or looking to refresh your current site, we’re here to help. Let’s bring your vision to life!</p>
+                <a href="contact.html" class="fadeup bg-[#135981] hover:bg-[#38B6FF] w-fit px-3.5 py-2.5 rounded-md text-md font-semibold text-white block">Get in Touch</a>
+            </div>
+        </div>
+      </section>
+    <footer>
+      <div class="bg-gray-50 py-4 px-6 pt-12 2xl:px-24">
+        <div class="flex justify-between px-4">
+          <div class="flex flex-col gap-2">
+            <a class="fadeup " href="index.html">Home</a>
+            <a class="fadeup delay1" href="about.html">About</a>
+            <a class="fadeup delay2" href="services.html">Services</a>
+            <a class="fadeup delay3" href="contact.html">Contact</a>
+          </div>
+          <div class="flex flex-col md:flex-row justify-around md:items-center md:gap-4">
+            <a href=""><svg class="size-8 fadeup" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+            <a href="mailto:simonsite10@gmail.com"><svg class="size-8 fadeup delay1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path  d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg></a>
+            <a href=""><svg class="size-8 fadeup delay2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+        </div>
+        </div>
+        <div class="mt-4">
+          <p class="text-xs text-center fadeup">
+            &copy; 2024 SimonSites. All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+  <script src="scripts/slider.js"></script>
+  <script src="scripts/nav.js"></script>
+
+</body>
+</html>
