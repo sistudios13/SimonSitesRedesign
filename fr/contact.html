@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Home - Simon Sites</title>
-    <link rel="stylesheet" href="styles/nav.css">
-    <script src="scripts/nav.js"></script>
-    <script src="scripts/alpine.js" defer></script>
-    <link rel="shortcut icon" href="assets/SmallLogo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/nav.css">
+    <script src="../scripts/nav.js"></script>
+    <script src="../scripts/alpine.js" defer></script>
+    <link rel="shortcut icon" href="../assets/SmallLogo.svg" type="image/x-icon">
 
-    <link rel="stylesheet" href="styles/scrollanims.css">
-    <script src="scripts/scrollanims.js" defer></script>
+    <link rel="stylesheet" href="../styles/scrollanims.css">
+    <script src="../scripts/scrollanims.js" defer></script>
 
     <script type="text/javascript">var submitted=false;</script>
     <script>
@@ -27,26 +27,26 @@
 
     <!-- NAV SECTION -->
     <header>
-        <div class="nav-container">
-            <nav id="navbar">
-                <img onclick="homeFunc()" id="logo" src="Assets/fulllogo.svg" alt="double s logo">
-                <ul class="menu" id="menu">
-                    <li><a  onclick="myFunction(this)" href="index.html">Home</a></li>
-                    <li><a onclick="myFunction(this)" href="about.html">About</a></li>
-                    <li><a onclick="myFunction(this)" href="services.html">Services</a></li>
-                    <li><a class="active" onclick="myFunction(this)" href="contact.html">Contact</a></li>
-                    <li><a href="fr/index.html">Français</a></li>
-                </ul>
-                <a onclick="myFunction(this)" class="icon" id="icon">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </a>
-                <div id="cover" class="absolute w-full h-20 top-0 left-0 z-50 bg-white hidden cover">
-                </div>
-            </nav>
-        </div>
-    </header>
+      <div class="nav-container">
+          <nav id="navbar">
+            <img onclick="homeFunc()" id="logo" src="../assets/fulllogo.svg" alt="double s logo">
+              <ul class="menu" id="menu">
+                <li><a  onclick="myFunction(this)" href="index.html">Accueil</a></li>
+                <li><a  onclick="myFunction(this)" href="about.html">À propos</a></li>
+                <li><a onclick="myFunction(this)" href="services.html">Services</a></li>
+                <li><a class="active" onclick="myFunction(this)" href="contact.html">Contacter</a></li>
+                <li><a href="../contact.html">English</a></li>
+              </ul>
+              <a onclick="myFunction(this)" class="icon" id="icon">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+              </a>
+              <div id="cover" class="absolute w-full h-20 top-0 left-0 z-50 bg-white hidden cover">
+              </div>
+          </nav>
+      </div>
+  </header>
 
 
     <!-- HERO SECTION -->
@@ -54,12 +54,12 @@
         <div class="bg-white">
             <div class="relative isolate px-6 pt-14 lg:px-8">
               <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-                <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#38B6FF] to-[#135981] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+                <div class="relative left-[calc(80%-1rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[10deg] bg-gradient-to-tr from-[#38B6FF] to-[#135981] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
               </div>
               <div class="mx-auto max-w-2xl py-24 sm:py-32 lg:py-48 2xl:py-56">
                 <div class="text-center">
-                  <h1 class="text-4xl mt-12 font-bold tracking-tight text-gray-900 sm:text-6xl fadeup">Contact Us</h1>
-                  <p class="mt-6 text-lg leading-8 text-gray-600 fadeup delay1">We’d love to hear from you! Whether you have questions about our services, want to discuss a project, or need support, the team at SimonSites is here to help. Reach out to us through any of the methods below, and we'll get back to you as soon as possible.</p>
+                  <h1 class="text-4xl mt-12 md:mt-0 font-bold tracking-tight text-gray-900 sm:text-6xl fadeup">Nous contacter</h1>
+                  <p class="mt-6 text-lg leading-8 text-gray-600 fadeup delay1">Nous aimerions avoir de vos nouvelles ! Que vous ayez des questions sur nos services, que vous souhaitiez discuter d'un projet ou que vous ayez besoin d'aide, l'équipe de SimonSites est là pour vous aider. N'hésitez pas à nous contacter par l'un des moyens ci-dessous, et nous vous répondrons dans les plus brefs délais.</p>
                   
                 </div>
               </div>
@@ -77,13 +77,13 @@
             
             <div>
               <h2 class="fadeup text-2xl font-bold py-4 lg:text-3xl 2xl:text-4xl">
-                  Email Us
+                Nous envoyer un courriel
               </h2>
               <div class="fadeup w-1/3 h-0.5 ml-1 bg-[#135981] xl:w-1/12"></div>
               <p class="fadeup py-4 text-gray-600 text-base lg:text-lg 2xl:text-xl">
-                For general inquiries or detailed project discussions, drop us an email at <a class="font-bold" href="mailto:simonsites10@gmail.com">simonsites10@gmail.com</a> We aim to respond within 24 hours.
+                Pour des questions d'ordre général ou des discussions détaillées sur un projet, envoyez-nous un courriel à <a class=" font-bold " href=" mailto:simonsites10@gmail.com ">simonsites10@gmail.com</a> Nous nous efforçons de vous répondre dans un délai de 24 heures.
               </p>
-              <a href="contact.html" class="fadeup bg-[#135981] hover:bg-[#38B6FF] w-fit px-3.5 py-2.5 rounded-md text-md font-semibold text-white block">Email Us</a>
+              <a href="contact.html" class="fadeup bg-[#135981] hover:bg-[#38B6FF] w-fit px-3.5 py-2.5 rounded-md text-md font-semibold text-white block">Envoyer un courriel</a>
             </div>
             
             
@@ -97,15 +97,15 @@
             
             <div>
               <h2 class="fadeup text-2xl font-bold py-4 lg:text-3xl 2xl:text-4xl">
-                  Follow Us
+                Suivez-nous
               </h2>
               <div class="fadeup w-1/3 h-0.5 ml-1 bg-[#135981] xl:w-1/12"></div>
               <p class="fadeup py-4 text-gray-600 text-base lg:text-lg 2xl:text-xl">
-                Stay connected and follow our latest updates on social media.
+                Restez connecté et suivez nos dernières mises à jour sur les médias sociaux.
               </p>
               <div class="flex gap-4">
                 <a href="" class="w-fit"><svg class="size-8 fadeup" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
-                <a href=""><svg class="size-8 fadeup delay1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+                
               </div>
               
             </div>
@@ -121,15 +121,15 @@
             <form method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSeH5aueAvqcpTR6C6X9PADt12wwh4S3BqX52B9R-H08KIZxdA/formResponse" target="hidden_iframe"
             onsubmit="submitted=true;" id="contact-form" class=" space-y-2 shadow-md bg-gray-50 p-4 rounded-lg 2xl:w-1/2 2xl:mx-auto">
                 <div id="contact-wrapper">
-                    <h2 class="fadeup text-2xl text-center font-bold py-4 lg:text-3xl 2xl:text-4xl">Reach Out</h2>
+                    <h2 class="fadeup text-2xl text-center font-bold py-4 lg:text-3xl 2xl:text-4xl">Envoyez-nous un message</h2>
                     
                     <div class="md:grid md:grid-cols-2 md:gap-4">
                         <div class="flex flex-col">
-                            <label class=" fadeup mb-1 ml-2" for="name">Name</label>
+                            <label class=" fadeup mb-1 ml-2" for="name">Nom</label>
                             <input required class="focus-visible:border-[#135981] outline-none fadeup border-gray-900 border-2 focus-visible:rounded-lg rounded-lg p-1.5" name="entry.873983918" id="name" type="text">
                         </div>
                         <div class="flex flex-col">
-                            <label class="mb-1 ml-2 fadeup " for="email">Email</label>
+                            <label class="mb-1 ml-2 fadeup " for="email">Courriel</label>
                             <input required class="focus-visible:border-[#135981] outline-none fadeup border-gray-900 border-2 focus-visible:rounded-lg rounded-lg p-1.5" name="entry.1668327303" id="email" type="email">
                         </div>
                     </div>
@@ -140,8 +140,8 @@
                     <button type="submit" class="cursor-pointer fadeup mt-5 mx-auto bg-[#135981] hover:bg-[#38B6FF] w-fit px-3.5 py-2.5 rounded-md text-md font-semibold text-white block">Email Us</button>
                 </div>
                 <div id="succes-mess" class="hidden">
-                    <h2 class=" text-2xl text-center font-bold py-4 lg:text-3xl 2xl:text-4xl">Success!</h2>
-                    <p class="text-gray-600 mb-8 text-center text-base lg:text-lg 2xl:text-xl">The contact form was successfully submitted! We will get back to you as soon as possible.</p>
+                    <h2 class=" text-2xl text-center font-bold py-4 lg:text-3xl 2xl:text-4xl">Succès!</h2>
+                    <p class="text-gray-600 mb-8 text-center text-base lg:text-lg 2xl:text-xl">Le formulaire de contact a été envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.</p>
                 </div>
 
             </form>
@@ -152,20 +152,20 @@
       <div class="bg-gray-50 py-4 px-6 pt-12 2xl:px-24">
         <div class="flex justify-between px-4">
           <div class="flex flex-col gap-2">
-            <a class="fadeup " href="index.html">Home</a>
-            <a class="fadeup delay1" href="about.html">About</a>
+            <a class="fadeup " href="index.html">Accueil</a>
+            <a class="fadeup delay1" href="about.html">À propos</a>
             <a class="fadeup delay2" href="services.html">Services</a>
-            <a class="fadeup delay3" href="contact.html">Contact</a>
+            <a class="fadeup delay3" href="contact.html">Contacter</a>
           </div>
           <div class="flex flex-col md:flex-row justify-around md:items-center md:gap-4">
-            <a href=""><svg class="size-8 fadeup" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+            <a href="https://www.instagram.com/simon.p15/" target="_blank" class="w-fit"><svg class="size-8 fadeup" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
             <a href="mailto:simonsite10@gmail.com"><svg class="size-8 fadeup delay1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path  d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg></a>
-            <a href=""><svg class="size-8 fadeup delay2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
-        </div>
+             
+          </div>
         </div>
         <div class="mt-4">
           <p class="text-xs text-center fadeup">
-            &copy; 2024 SimonSites. All Rights Reserved
+            &copy; 2024 SimonSites. Tous droits réservés
           </p>
         </div>
       </div>
