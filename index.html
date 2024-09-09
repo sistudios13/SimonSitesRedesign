@@ -20,15 +20,6 @@
     <meta name="author" content="Simon P">
     
   </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4024TESCJ5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4024TESCJ5');
-</script>
 <body class="text-gray-900">
 
     <!-- NAV SECTION -->
@@ -251,8 +242,70 @@
       </div>
     </footer>
 
+    <div id="cookie-banner" class="fixed bottom-0">
+      <div class="bg-white p-4 flex flex-col gap-4 border-t fadeup delay4">
+        <div class="flex flex-col gap-2">
+          <span class="text-lg font-bold">We Value Your Privacy</span>
+          <span>This site uses cookies to improve your experience. Do you accept?</span>
+        </div>
+        <div class="flex justify-between gap-5">
+          <button id="reject-cookies" class="rounded-md border-[#135981] border-2 px-5 py-2.5 w-full text-base font-semibold text-[#135981] hover:border-[#38B6FF] hover:text-[#38B6FF]">Reject</button>
+          <button id="accept-cookies" class="rounded-md bg-[#135981] border-[#135981] px-5 w-full border-2 py-2.5 text-base font-semibold text-white shadow-md hover:border-[#38B6FF] hover:bg-[#38B6FF]">Accept</button>
+        </div>
+      </div>
+    </div>
+  
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    // Check if consent has already been given
+    const consentGiven = localStorage.getItem('cookieConsent');
+    if (consentGiven === 'accepted') {
+      loadGoogleAnalytics();
+      hideBanner();
+    } else if (consentGiven === 'rejected') {
+      hideBanner();
+    } else {
+      // Show the cookie banner
+      document.getElementById('cookie-banner').style.display = 'block';
+    }
+
+    // Handle 'Accept' button click
+    document.getElementById('accept-cookies').addEventListener('click', function() {
+      localStorage.setItem('cookieConsent', 'accepted');
+      loadGoogleAnalytics();
+      hideBanner();
+    });
+
+    // Handle 'Reject' button click
+    document.getElementById('reject-cookies').addEventListener('click', function() {
+      localStorage.setItem('cookieConsent', 'rejected');
+      hideBanner();
+    });
+
+    function hideBanner() {
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+
+    function loadGoogleAnalytics() {
+      const script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-4024TESCJ5';
+      document.head.appendChild(script);
+
+      const script2 = document.createElement('script');
+      script2.innerHTML = `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-4024TESCJ5');
+      `
+      document.head.appendChild(script2);
+    }
+  });
+
+  </script>
   <script src="scripts/slider.js"></script>
   <script src="scripts/nav.js"></script>
-
 </body>
 </html>
